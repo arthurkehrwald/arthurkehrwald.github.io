@@ -2,31 +2,51 @@
   font-size: 1.1em;
 }
 
-.intro-box {
+.hero-box {
   padding: 2% 5%;
   margin: 5% auto 10%;
 }
 
-.space-symbol-svg {
-  width: 40%;
-  height: 10%;
+.hero-title-spacer {
+  display: none;
+}
+
+.hero-sub-title {
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .hero-title-spacer {
+    display: block;
+    height: 50%;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .hero-sub-title {
+    font-size: 2rem;
+  }
 }
 
 .space-symbol {
-  width: 40%;
-  height: 10%;
+  margin-left: 12px;
+  padding: 0;
   background-color: #e6e6e6;
-}
-
-.invis {
-  visibility: hidden;
-}
-
-h1 {
-  font-size: 200%;
-  font-weight: bolder;
 }
 
 p {
   font-size: 18px;
+}
+
+.content > h1:not(:first-child) {
+    margin-top: 3rem;
+}
+.content > h2:not(:first-child) {
+    margin-top: 3rem;
+}
+
+.content > h3:not(:first-child) {
+    margin-top: 3rem;
 }
